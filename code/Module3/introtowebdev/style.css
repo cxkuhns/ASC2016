@@ -1,0 +1,14 @@
+body{
+	font-family: sans-serif;
+}
+
+img{
+	width: 900px;
+}
+#carousel_pic{
+    border: 10px solid black;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(border.png) 50 round;
+}

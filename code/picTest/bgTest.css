@@ -1,0 +1,94 @@
+div.mySquare{
+	width: 33.333333vw;
+	height: 33.333333vw;
+	-ms-background-position-x: center;
+	-ms-background-position-y: top;
+	background-position: center top;
+	background-size: cover;
+  text-align: right;
+}
+
+div.mySquare h2{
+  color: #FFFFFF;
+  font-size: 3vw;
+  opacity: 0.7;
+  padding-top: 25vw;
+  padding-right: 1vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.mySquare h3{
+  color: #FFFFFF;
+  font-size: 1.5vw;
+  opacity: 0.7;
+  padding-right: 1vw;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+div.content{
+  z-index : 999;
+  position: fixed;
+  top: 15vh;
+  margin: auto;
+  width: 30vw;
+  left: 30vw;
+  right: 30vw;
+  /*text-align: center;
+  bottom: auto;
+  top: auto;
+  left: 50vw;
+  right: 50vw;*/
+}
+
+div.content h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 22vh;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+div.upload{
+	background-color: #ffffff;
+  border-radius: 10px;
+	padding: 1.5vw;
+}
+
+#water1, #water2, #water3, #water4, #water5 { 
+  width: 5vw;
+}
+
+/*#water2, #water3, #water4 { 
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+}
+
+#water1 { 
+  margin-right: 2.5vw;
+}
+
+#water5 { 
+  margin-left: 2.5vw;
+}*/
+
+.low {
+  float: left;
+}
+
+.high {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  width: 20%;
+}
+

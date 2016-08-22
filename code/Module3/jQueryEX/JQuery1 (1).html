@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Loading JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title></title>
+	<!-- Oh, snap, you can put all your CSS in the HTML!? -->
+	<style>
+	p {
+		/*fontnames with backups in case first ones aren't installed for user's computer*/
+		font-family: 'helvetica neue', helvetica, sans-serif;
+        letter-spacing: 1px;
+		text-transform: uppercase;
+		text-align: center;
+		border: 2px solid rgba(0,0,200,0.6);
+		background: rgba(0,0,200,0.3);
+		color: rgba(0,0,200,0.6);
+		box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+		border-radius: 10px;
+		padding: 3px 10px;
+		display: inline-block;
+
+		/*converts mouse to a pointer when on this tag*/
+		cursor:pointer;
+	}
+	</style>
+</head>
+<body>
+	<p>And his name is...John Cena!</p>
+	<!-- Note: the JS is read in order, so consider where you put your JS code -->
+		<script>
+			// finds the "p" tags and the variable "becomes" the living version of what was found
+			var para = $('p');
+			// the "living" variable waits for a specific event to happen (in this case being clicked). These kinds of events are predefined (look up documentation)
+			// we can make function call when even happens
+			para.click(updateName);
+			function updateName() {
+				var name = prompt('Enter a new name');
+				// can change the context of (and pretty much anything about) the "living" variable/tag/button/anything!   
+				para.text("His name is now..." + name);
+			}
+		</script>
+</body>
+</html>

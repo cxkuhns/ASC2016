@@ -1,0 +1,28 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <!-- button for sending message to message board -->
+    <button onclick='sendMessage()' id='js'>Send</button>
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+
+    <!-- Paste your snippet here, will include firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCqDryBzO-E4klaW3u1EpHdcKSto15BdXY",
+        authDomain: "pictest-96787.firebaseapp.com",
+        databaseURL: "https://pictest-96787.firebaseio.com",
+        storageBucket: "pictest-96787.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- adding jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- script we'll make dynamic changes with. You'll have to create this file -->
+    <script src='once.js'></script>
+  </body>
+</html>
